@@ -1,0 +1,66 @@
+.homepage {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  .home {
+    width: 80rem;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Newake";
+    flex-direction: row;
+    margin-top: 7rem;
+    h1 {
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 62px;
+
+      background: linear-gradient(189.44deg, #85adf8 11.18%, #5387e9 63.22%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    h2 {
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 31px;
+      /* identical to box height */
+
+      color: #ffffff;
+    }
+
+    p {
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 19px;
+      width: 600px;
+      color: #8f8f8f;
+    }
+  }
+
+  .section-news {
+    h1 {
+      font-family: "Newake";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 43px;
+      /* identical to box height */
+
+      color: #ffffff;
+
+      img {
+        width: 4rem;
+      }
+    }
+  }
+}
