@@ -8,9 +8,11 @@ const Navbar = () => {
     <section className="section-navbar">
       <nav className="navbar">
         <div>
-          <figcaption>
-            <img src={logo} alt="logo" />
-          </figcaption>
+          <Link to="/">
+            <figcaption>
+              <img src={logo} alt="logo" />
+            </figcaption>
+          </Link>
         </div>
         <div className="nav-links">
           <ul>

@@ -3,6 +3,7 @@
 
   display: flex;
   justify-content: center;
+  padding-bottom: 15rem;
 
   .home {
     width: 80rem;
@@ -47,12 +48,12 @@
     }
   }
 
-  .section-news {
+  .section-tests {
     h1 {
       font-family: "Newake";
       font-style: normal;
       font-weight: 400;
-      font-size: 44px;
+      font-size: 34px;
       line-height: 43px;
       /* identical to box height */
 
@@ -61,6 +62,64 @@
       img {
         width: 4rem;
       }
+    }
+
+    .grid-tests {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      column-gap: 40px;
+      row-gap: 54px;
+
+      .block-test {
+        width: 359px;
+        height: 266px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        img {
+          position: absolute;
+          width: 359px;
+          height: 266px;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+        h2 {
+          position: absolute;
+          margin-top: 14rem;
+          padding-left: 2rem;
+          font-family: "Newake";
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 15px;
+
+          color: #ffffff;
+        }
+
+        span {
+        }
+      }
+    }
+  }
+
+  .trailer-section {
+    margin-top: 6.938rem;
+    h1 {
+      font-family: "Newake";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 43px;
+      /* identical to box height */
+
+      color: #ffffff;
+    }
+
+    .div-video {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
     }
   }
 }
