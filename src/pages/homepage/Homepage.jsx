@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import katana from "../../assets/fifteen-katana-zero.gif";
 import banner from "../../assets/group3.svg";
+import axios from "axios";
 
 const Homepage = () => {
+  const [tests, setTests] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/api/test/all`)
+      .then((res) => {
+        console.log("res.data :>> ", res.data);
+        setTests(res.data);
+        console.log("je veux voir mon image :>> ", res.data.allArticle.image);
+      })
+      .catch((err) => {
+        console.log("err :>> ", err);
+      });
+  }, []);
+
   return (
     <section className="homepage">
       <div className="home">
@@ -21,9 +36,14 @@ const Homepage = () => {
             <img src={banner} alt="banner" />
           </div>
         </header>
-        <article className="section-news">
+        {/* <article className="section-news">
           <h1>
             News <img src={katana} alt="dragon" />
+          </h1>
+        </article> */}
+        <article className="section-tests">
+          <h1>
+            Tests <img src={katana} alt="dragon" />
           </h1>
         </article>
       </div>
